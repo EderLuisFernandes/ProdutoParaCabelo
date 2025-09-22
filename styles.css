@@ -21,7 +21,10 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+#container{
+    padding: 0;
+    max-width: 900px;
+}
 /* Alert Banner */
 .alert-banner {
     background: linear-gradient(135deg, var(--red2), var(--red));
@@ -214,7 +217,7 @@ section {
     background: #f8fafc;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .flutuar{
     animation: float 3s ease-in-out infinite;
