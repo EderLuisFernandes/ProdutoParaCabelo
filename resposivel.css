@@ -1,0 +1,135 @@
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .product-showcase {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 25px 0;
+    }
+    
+    .about h2,
+    .comparison h2,
+    .ingredients h2,
+    .cta-section-main h2,
+    .guarantee h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-section-main h3 {
+        font-size: 1.2rem;
+    }
+    
+    .ingredients-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .ingredient-item {
+        padding: 20px;
+    }
+    .ingredient-item-tema{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.ingredient-item-img{
+    width: 61px;
+    height: 61px;
+    top: -25px;
+  
+}
+.ingredient-item-img img{
+    width: 60px;
+    height: 60px;
+}
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .about{
+    flex-direction: column-reverse;
+}
+#container2 {
+    width: 90%;
+}
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .alert-banner {
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+    
+    .benefits-grid {
+        max-width: 100%;
+    }
+    
+    .benefit-item {
+        padding: 15px;
+    }
+    
+    .benefit-item h3 {
+        font-size: 17px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-item {
+        padding: 20px 15px;
+    }
+    
+    .ingredient-item {
+        padding: 15px;
+    }
+    
+    .ingredient-item h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title,
+.hero-subtitle,
+.section-description {
+    animation: fadeInUp 0.8s ease-out;
+}
