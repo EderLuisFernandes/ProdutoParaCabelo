@@ -22,7 +22,6 @@ body {
     padding: 0 20px;
 }
 #container{
-    padding: 0;
     max-width: 900px;
 }
 /* Alert Banner */
@@ -219,19 +218,20 @@ section {
     display: flex;
   flex-wrap: wrap;
 }
-.flutuar{
+
+.float{
     animation: float 3s ease-in-out infinite;
 }
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px); /* sobe */
-  }
-  100% {
-    transform: translateY(0px); /* volta */
-  }
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .comparison h2 {
@@ -295,17 +295,17 @@ section {
 
 }
 .ingredient-item-img{
-    width: 75px;
-    height: 75px;
+    width: 76px;
+    height: 76px;
     position: absolute;
-    right: 0;
+    right: -49px;
     top: -53px;
-    border-top: 3px dashed #fff;
+    border: 3px dashed var(--red2);
     border-radius: 50%;
 }
 .ingredient-item-img img{
-    width: 74px;
-    height: 74px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     object-fit: cover;
 
